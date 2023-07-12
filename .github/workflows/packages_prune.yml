@@ -9,7 +9,7 @@ jobs:
     - name: Prune
       uses: vlaurin/action-ghcr-prune@v0.5.0
       with:
-        token: ${{ secrets.GHRC_TOKEN }}
+        token: ${{ secrets.GHCR_TOKEN }}
         #organization: your-org
         user: arielmendz
         container: coretto

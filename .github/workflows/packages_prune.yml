@@ -18,3 +18,5 @@ jobs:
         keep-tags-regexes: |
           ^RC-
         prune-untagged: true
+        prune-tags-regexes: |
+          *

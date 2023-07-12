@@ -1,3 +1,4 @@
+name: Packages prune
 on:
   registry_package:
     types: [published]
@@ -5,7 +6,7 @@ jobs:
   packages-prune:
     runs-on: ubuntu-latest
     steps:
-      - name: Prune
+    - name: Prune
       uses: vlaurin/action-ghcr-prune@v0.5.0
       with:
         token: ${{ secrets.GHRC_TOKEN }}

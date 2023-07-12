@@ -18,4 +18,4 @@ jobs:
       with:
         github-token: ${{ secrets.GHCR_TOKEN }} # Provide GITHUB_TOKEN to login into the GitHub Packages
         image-name: coretto # Provide only Docker image name
-        image-tag: 1.0.16
+        image-tag: 1.0.17

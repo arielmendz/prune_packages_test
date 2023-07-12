@@ -12,7 +12,7 @@ jobs:
         token: ${{ secrets.GHCR_TOKEN }}
         #organization: your-org
         user: arielmendz
-        container: coretto
+        container: prune_packages_test/coretto
         dry-run: true # Dry-run first, then change to `false`
         keep-last: 5
         keep-tags-regexes: |

@@ -16,7 +16,7 @@ jobs:
         dry-run: false # Dry-run first, then change to `false`
         keep-last: 5
         keep-tags-regexes: |
-          ^RC-
+          ^rc-
         prune-untagged: true
         prune-tags-regexes: |
           ^.

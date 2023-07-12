@@ -14,6 +14,7 @@ jobs:
         user: arielmendz
         container: coretto
         dry-run: true # Dry-run first, then change to `false`
-        keep-younger-than: 7 # days
-        keep-last: 2
+        keep-last: 5
+        keep-tags-regexes: |
+          ^RC-
         prune-untagged: true

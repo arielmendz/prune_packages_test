@@ -1,0 +1,18 @@
+on:
+  registry_package:
+    types: [published]
+jobs:
+  packages-prune:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prune
+      uses: vlaurin/action-ghcr-prune@v0.5.0
+      with:
+        token: ${{ secrets.GHRC_TOKEN }}
+        #organization: your-org
+        user: arielmendz
+        container: coretto
+        dry-run: true # Dry-run first, then change to `false`
+        keep-younger-than: 7 # days
+        keep-last: 2
+        prune-untagged: true

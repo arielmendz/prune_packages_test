@@ -19,4 +19,3 @@ jobs:
         github-token: ${{ secrets.GHRC_TOKEN }} # Provide GITHUB_TOKEN to login into the GitHub Packages
         image-name: coretto # Provide only Docker image name
         image-tag: 1.0.0
-        extract-git-tag: true # Provide flag to extract Docker image tag from git reference

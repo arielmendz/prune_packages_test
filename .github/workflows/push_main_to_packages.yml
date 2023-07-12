@@ -16,6 +16,6 @@ jobs:
     - name: Build and Publish Tag Docker image
       uses: DrSkunk/gp-docker-action@1.1.9
       with:
-        github-token: ${{ secrets.GHRC_TOKEN }} # Provide GITHUB_TOKEN to login into the GitHub Packages
+        github-token: ${{ secrets.GHCR_TOKEN }} # Provide GITHUB_TOKEN to login into the GitHub Packages
         image-name: coretto # Provide only Docker image name
         image-tag: 1.0.0
